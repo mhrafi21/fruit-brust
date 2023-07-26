@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- google font -->
+    <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- font awesome -->
+        <!-- Tailwind and daisyui cdn -->
+        <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind and daisyui cdn -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    
+      <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            main:"#F85559",
+          }
+        }
+      }
+    }
+
+  </script>
+  <style>
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+    }
+  </style>
+    <title>Fruit Brust Template</title>
+</head>
+<body class = "font-lato">
+
+
+<header>
+
+<div class="container mx-auto">
+  <div class="navbar bg-base-100 flex justify-between">
+  <div class="navbar-center">
+     <img src="./images/logo.png" alt=""> <a class="btn btn-ghost normal-case text-xl">Fruit Brust</a>
+  </div>
+    <div class="navbar ml-auto md:hidden block">
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Home</a></li>
+        <li><a>About Us</a></li>
+        <li><a>Shop</a></li>
+        <li><a>All Fruits</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container mx-auto p-4">
+  <div class="carousel w-full">
+  <div id="slide1" class="carousel-item relative w-full">
+    <img src="./images/banner1.png" class="w-full h-full" />
+    <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <div class = "order-2 text-center text-white font-semibold">
+        <h1 class = "text-[30px] md:text-[76px] font-[800] text-white ">Exotic tastes at your doorstep</h1>
+        <p>We supply highly quality organic products</p>
+        <div> <button class = "px-7 py-3 bg-main rounded-lg mt-5">Shop Now</button></div>
+      </div>
+      
+      <a  href="#slide4" class="btn btn-circle order-1">❮</a> 
+      <a  href="#slide2" class="btn btn-circle order-3">❯</a>
+  
+    </div>
+  </div> 
+  <div id="slide2" class="carousel-item relative w-full">
+    <img src="./images/banner2.png" class="w-full" />
+    <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+         <div class = "order-2 text-center text-white font-semibold">
+        <h1 class = "text-[30px] md:text-[76px] font-[800] text-white ">Exotic tastes at your doorstep</h1>
+        <p>We supply highly quality organic products</p>
+        <div> <button class = "px-7 py-3 bg-main  rounded-lg mt-5">Shop Now</button></div>
+      </div>
+
+      <a href="#slide1" class="btn btn-circle order-1">❮</a> 
+      <a href="#slide3" class="btn btn-circle order-3">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" class="carousel-item relative w-full">
+    <img src="./images/banner3.png" class="w-full" />
+    <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+     
+         <div class = "order-2 text-center text-white font-semibold">
+        <h1 class = "text-[30px] md:text-[76px] font-[800] text-white ">Exotic tastes at your doorstep</h1>
+        <p>We supply highly quality organic products</p>
+        <div> <button class = "px-7 py-3 bg-main  rounded-lg mt-5">Shop Now</button></div>
+      </div>
+     
+      <a href="#slide2" class="btn btn-circle order-1">❮</a> 
+      <a href="#slide4" class="btn btn-circle order-3">❯</a>
+    </div>
+  </div> 
+  <div id="slide4" class="carousel-item relative w-full">
+    <img src="./images/banner4.png" class="w-full" />
+    <div class="absolute flex justify-between  items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+     
+         <div class = "order-2 text-center text-white font-semibold">
+        <h1 class = "text-[30px] md:text-[76px] font-[800] text-white ">Exotic tastes at your doorstep</h1>
+        <p>We supply highly quality organic products</p>
+        <div> <button class = "px-7 py-3 bg-main  rounded-lg mt-5">Shop Now</button></div>
+      </div>
+     
+      <a href="#slide3" class="btn btn-circle order-1">❮</a> 
+      <a href="#slide1" class="btn btn-circle order-3">❯</a>
+    </div>
+  </div>
+</div>
+</div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- deal section -->
+    <section>
+        <div class="container px-4 mx-auto p-4">
+            <div class="deal-sec-1-row flex items-center justify-between flex-col gap-6 md:flex-row">
+                <div class="deal-sec-1-col">
+                    <h2 class = "text-5xl font-[800] text-black">Deal of the day</h2>
+                    <p class = "md:w-3/4 md:text-start mt-4 text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                 <div class = "grid grid-cols-7 justify-center gap-5 text-center">
+                  <div class = "flex flex-col items-center"><p class="text-5xl">10</p> <p>Day</p></div>
+                  <div class = "text-5xl">:</div>
+                 <div class = "flex flex-col items-center"><p class="text-5xl">05</p> <p>Hours</p></div>
+                  <div class = "text-5xl">:</div>
+                  <div class = "flex flex-col items-center"><p class="text-5xl">14</p> <p>Minutes</p></div>
+                  <div class = "text-5xl">:</div>
+                  <div class = "flex flex-col items-center"><p class="text-5xl">38</p> <p>Seconds</p></div>
+                 </div>
+            </div>
+            <div class = "deal-rows grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-7">
+                <div class="deal-col text-center border p-9">
+                    <img class = "m-auto" src="./images/deal1.png" alt="no image found">
+                    <p class= "text-2xl mt-3 font-bold">12.90$ - 18.85$</p>
+                    <hr class = "mt-3 w-[70%] m-auto"> 
+                    <p class = "text-gray-500 mt-3">Apples</p>
+                    <div class="rating mt-3">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                   </div>  
+                <div class = "mt-3">
+                  <label for="my_modal_7" class="text-main">Details</label>
+                    <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                    <div class="modal">
+                    <div class="modal-box">
+                          <img class = "m-auto" src="./images/deal1.png" alt="no image found">
+                        <h3 class="text-lg font-bold">Orange </h3>
+                        <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits</p>
+                    <div class="rating mt-3">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                   </div> 
+                       <div> <button class = "btn bg-main">Buy Now</button></div>
+
+                    </div>
+                    <label class="modal-backdrop" for="my_modal_7">Close</label>
+                    </div>
+             </div>
+
+            </div>
+                   <div class="deal-col text-center border p-9">
+                    <img class = "m-auto" src="./images/deal2.png" alt="no image found">
+                    <p class= "text-2xl mt-3 font-bold">12.90$ - 18.85$</p>
+                    <hr class = "mt-3 w-[70%] m-auto"> 
+                    <p class = "text-gray-500 mt-3">Apples</p>
+                    <div class="rating mt-3">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                </div>  
+             <div class = "mt-3">
+                  <label for="my_modal_7" class="text-main">Details</label>
+                    <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                    <div class="modal">
+                    <div class="modal-box">
+                        <h3 class="text-lg font-bold">Hello!</h3>
+                        <p class="py-4">This modal works with a hidden checkbox!</p>
+                    </div>
+                    <label class="modal-backdrop" for="my_modal_7">Close</label>
+                    </div>
+             </div>
+            </div>
+            <div class="deal-col text-center border p-9">
+                    <img class = "m-auto" src="./images/deal3.png" alt="no image found">
+                    <p class= "text-2xl mt-3 font-bold">12.90$ - 18.85$</p>
+                    <hr class = "mt-3 w-[70%] m-auto"> 
+                    <p class = "text-gray-500 mt-3">Apples</p>
+                    <div class="rating mt-3">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                </div>  
+             <div class = "mt-3">
+                  <label for="my_modal_7" class="text-main">Details</label>
+                    <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                    <div class="modal">
+                    <div class="modal-box">
+                        <h3 class="text-lg font-bold">Hello!</h3>
+                        <p class="py-4">This modal works with a hidden checkbox!</p>
+                    </div>
+                    <label class="modal-backdrop" for="my_modal_7">Close</label>
+                    </div>
+             </div>
+            </div>
+            <div class="deal-col text-center border p-9">
+                    <img class = "m-auto" src="./images/deal4.png" alt="no image found">
+                    <p class= "text-2xl mt-3 font-bold">12.90$ - 18.85$</p>
+                    <hr class = "mt-3 w-[70%] m-auto"> 
+                    <p class = "text-gray-500 mt-3">Apples</p>
+                    <div class="rating mt-3">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-main" />
+                </div>  
+             <div class = "mt-3">
+                  <label for="my_modal_7" class="text-main">Details</label>
+                    <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                    <div class="modal">
+                    <div class="modal-box">
+                        <h3 class="text-lg font-bold">Hello!</h3>
+                        <p class="py-4">This modal works with a hidden checkbox!</p>
+                    </div>
+                    <label class="modal-backdrop" for="my_modal_7">Close</label>
+                    </div>
+             </div>
+            </div>
+          </div>
+          <div class = "text-center mt-6"><button class = "px-7 rounded-lg py-5 bg-main text-white font-bold text-lg">Show All</button></div>
+        </div>
+    </section>
+
+    <!-- deal section -->
+    <!-- meet up section -->
+    <section>
+      <div class="container px-4 mx-auto p-4">
+         
+    <div class="hero min-h-screen" style="background-image: url('./images/meet.png');">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-center text-neutral-content">
+    <div class="max-w-4xl py-8">
+           <div class = "flex flex-col gap-6 mb-10">
+            <h2 class = "text-5xl text-white">Meet the team section </h2>
+            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+            <div class="meet-row grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-8">
+                <div class="meet-col flex flex-col gap-3">
+                    <img class = "w-36 h-36 rounded-full object-cover m-auto" src="./images/member1.png" alt="no image found" >
+                    <h2 class="text-xl">Awlad Hossain</h2>
+                    <p class = "text-sm">Fruits Expert</p>
+                    <p class = "flex items-center justify-center gap-2">
+                        <i class = "fa-brands fa-facebook text-2xl  text-white"></i>
+                        <i class = "fa-brands fa-twitter text-2xl  text-white"></i>
+                        <i class = "fa-brands fa-instagram text-2xl  text-white"></i>
+                    </p>
+                </div>
+                  <div class="meet-col flex flex-col gap-3">
+                    <img class = "w-36 h-36 rounded-full object-cover m-auto" src="./images/member2.png" alt="no image found">
+                    <h2 class="text-xl">Awlad Hossain</h2>
+                    <p class = "text-sm">Fruits Expert</p>
+                    <p class = "flex items-center justify-center gap-2">
+                        <i class = "fa-brands fa-facebook text-2xl  text-white"></i>
+                        <i class = "fa-brands fa-twitter text-2xl  text-white"></i>
+                        <i class = "fa-brands fa-instagram text-2xl  text-white"></i>
+                    </p>
+                </div>
+                  <div class="meet-col flex flex-col gap-3">
+                    <img class = "w-36 h-36 rounded-full object-cover m-auto" src="./images/member3.png" alt="no image found">
+                    <h2 class="text-xl">Awlad Hossain</h2>
+                    <p class = "text-sm">Fruits Expert</p>
+                    <p class = "flex items-center justify-center gap-2">
+                        <i class = "fa-brands fa-facebook text-2xl  text-white"></i>
+                        <i class = "fa-brands fa-twitter text-2xl  text-white"></i>
+                        <i class = "fa-brands fa-instagram text-2xl  text-white"></i>
+                    </p>
+                </div>
+                    <div class="meet-col flex flex-col gap-3">
+                    <img class = "w-36 h-36 rounded-full object-cover m-auto" src="./images/member4.png" alt="no image found">
+                    <h2 class="text-xl">Awlad Hossain</h2>
+                    <p class = "text-sm">Fruits Expert</p>
+                    <p class = "flex items-center justify-center gap-2">
+                        <i class = "fa-brands fa-facebook text-2xl  text-white"></i>
+                        <i class = "fa-brands fa-twitter text-2xl  text-white"></i>
+                        <i class = "fa-brands fa-instagram text-2xl  text-white"></i>
+                    </p>
+                </div>
+            
+        </div>
+    </div>
+  </div>
+</div>
+        </div>
+          
+    </section>
+
+    <!-- meet up section -->
+    <!-- why choose us  -->
+    <section>
+        <div class="container mx-auto p-4">
+            <div class = "flex flex-col gap-6 items-center">
+            <h2 class = "text-5xl text-black font-[800] ">Why Choose Us </h2>
+            <p class = "w-[70%] text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+           </div>
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-10 ">
+                <div class="choose-col order-2 md:order-1">
+                    <div class = "flex gap-4">
+                            <div>
+                                <svg class = "p-5 rounded-full bg-gray-200" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none">
+                               <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+                               </svg>
+                            </div>
+                          <div class = "md:text-start text-center flex flex-col gap-3">
+                             <h3 class="font-[800] text-2xl">Dedicated Team</h3>
+                              <hr class = "w-20 bg-gray-500 md:mr-auto m-auto h-0.5">
+                            <p >Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          </div>
+                        </div>
+                            <div class = "flex gap-4  mt-9">
+                            <div>
+                                <svg class = "p-5 rounded-full bg-gray-200" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none">
+                               <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+                               </svg>
+                            </div>
+                          <div class = "md:text-start text-center flex flex-col gap-3">
+                             <h3 class="font-[800] text-2xl">Fresh is Best</h3>
+                              <hr class = "w-20 bg-gray-500 h-0.5 md:mr-auto m-auto">
+                            <p >Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          </div>
+                    </div>
+                           <div class = "flex gap-4  mt-9">
+                            <div>
+                                <svg class = "p-5 rounded-full bg-gray-200" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none">
+                               <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+                               </svg>
+                            </div>
+                          <div class = "md:text-start text-center flex flex-col gap-3">
+                             <h3 class="font-[800] text-2xl">Gift Certificates</h3>
+                              <hr class = "w-20 bg-gray-500 h-0.5 md:mr-auto m-auto">
+                            <p >Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          </div>
+                    </div>
+                </div>
+                 <div class="choose-col order-1 md:order-2">
+                    <img src="./images/whychoose1.png" alt="">
+                </div>
+                 <div class="choose-col order-3 md:order-3">
+                              <div class = "flex gap-4">
+                            <div>
+                                <svg class = "p-5 rounded-full bg-gray-200" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none">
+                               <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+                               </svg>
+                            </div>
+                          <div class = "md:text-right text-center flex flex-col gap-3">
+                             <h3 class="font-[800] text-2xl">Integrated Supplier</h3>
+                              <hr class = "w-20 md:ml-auto m-auto bg-gray-500 h-0.5">
+                            <p >Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          </div>
+                        </div>
+                            <div class = "flex gap-4  mt-9 ">
+                            <div>
+                                <svg class = "p-5 rounded-full bg-gray-200" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none">
+                               <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+                               </svg>
+                            </div>
+                          <div class = "md:text-right text-center flex flex-col gap-3">
+                             <h3 class="font-[800] text-2xl">Sustainable Practice</h3>
+                              <hr class = "w-20 md:ml-auto m-auto bg-gray-500 h-0.5">
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          </div>
+                    </div>
+                           <div class = "flex gap-4  mt-9">
+                            <div>
+                                <svg class = "p-5 rounded-full bg-gray-200" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none">
+                               <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+                               </svg>
+                            </div>
+                          <div class = "md:text-right text-center flex flex-col gap-3">
+                             <h3 class="font-[800] text-2xl">The Benefits Only</h3>
+                              <hr class = "w-20 md:ml-auto m-auto bg-gray-500 h-0.5 ">
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </section>
+    <!-- why choose us -->
+    <!-- footer -->
+    <footer class = "bg-black py-20">
+      <div class="container mx-auto p-4">
+        <div class = "flex items-center justify-center gap-4">
+          <div><img src="./images/logo.png" alt="no logo found"></div>
+          <div><h3 class = "text-4xl text-white">Fruit Burst</h3></div>
+        </div>
+        <div class = "flex flex-wrap w-[80%] justify-center mt-6 text-white font-[600] gap-x-6 m-auto">
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Shop</a>
+          <a href="">All Fruits</a>
+          <a href="">Support</a>
+          <a href="">My Account</a>
+        </div>
+          <div class = "flex items-center justify-center gap-7 mt-10 text-2xl">
+          <a href=""><i class = "fa-brands fa-facebook text-white"></i></a>
+          <a href=""><i class = "fa-brands fa-twitter text-white"></i></a>
+          <a href=""><i class = "fa-brands fa-whatsapp text-white"></i></a>
+          <a href=""><i class = "fa-brands fa-instagram text-white"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin text-white"></i></a>
+          <a href=""><i class="fa-brands fa-youtube text-white"></i></a>
+                   
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+</body>
+</html>
